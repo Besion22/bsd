@@ -1,0 +1,46 @@
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  margin-top: 60px;
+
+  .projectsTitle {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1000;
+    background: linear-gradient(to bottom, #ff8660, #d5491d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .viewAllButton {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-color: #161513;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20;
+  }
+  .viewAllButton:hover {
+    border: 2px solid #fff;
+    background-color: #fff;
+    color: #161513;
+    transition: all 0.3s ease;
+  }
+}

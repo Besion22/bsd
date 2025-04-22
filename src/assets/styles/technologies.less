@@ -1,0 +1,33 @@
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+
+  h1 {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1000;
+    color: #fff;
+  }
+
+  .icons-container {
+    display: flex;
+    flex-direction: flex-wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .technologyIcon {
+    transition: transform 0.3s ease;
+  }
+
+  .technologyIcon:hover {
+    transform: translateY(-5px);
+  }
+}
