@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import bsd from "../assets/images/bsd.svg";
 import "../assets/styles/navbar.less";
@@ -24,24 +24,24 @@ const Navbar = () => {
           />
         </div>
         <div className={`links-container ${isOpen ? "open" : ""}`}>
-          <a
-            href="/bsd"
+          <Link
+            to="/bsd"
             className={`link ${isActive("/bsd") ? "active" : ""}`}
           >
             Home
-          </a>
-          <a
-            href="/bsd/projects"
+          </Link>
+          <Link
+            to="/bsd/projects"
             className={`link ${isActive("/bsd/projects") ? "active" : ""}`}
           >
             Projects
-          </a>
-          <a
-            href="/bsd/contact"
+          </Link>
+          <Link
+            to="/bsd/contact"
             className={`link ${isActive("/bsd/contact") ? "active" : ""}`}
           >
             Contact
-          </a>
+          </Link>
         </div>
         <div
           className="hamburger"
