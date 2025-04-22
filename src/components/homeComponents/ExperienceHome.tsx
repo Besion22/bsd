@@ -1,7 +1,7 @@
 import EducationExperienceCard from "../resuseable/EducationExperienceCard";
 import "../../assets/styles/experience.less";
-import freelancerIcon from "../assets/images/icons/freelancer.svg";
-import zentechIcon from "../assets/images/icons/zentech.svg";
+import freelancerIcon from "../../assets/images/icons/freelancer.svg";
+import zentechIcon from "../../assets/images/icons/zentech.svg";
 
 const Experience = () => {
   return (

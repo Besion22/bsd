@@ -1,7 +1,7 @@
 import EducationExperienceCard from "../resuseable/EducationExperienceCard";
 import "../../assets/styles/education.less";
-import iunsIcon from "../assets/images/icons/iuns.svg";
-import afaIcon from "../assets/images/icons/afa.svg";
+import iunsIcon from "../../assets/images/icons/iuns.svg";
+import afaIcon from "../../assets/images/icons/afa.svg";
 
 const Education = () => {
   return (
