@@ -1,7 +1,7 @@
 import ProjectCard from "../resuseable/ProjectCard";
-import viewIcon from "../assets/images/icons/viewIcon.svg";
-import projectCardImg from "../assets/images/projectCardImg.avif";
-import projectCardNext from "../assets/images/next.webp";
+import viewIcon from "../../assets/images/icons/viewIcon.svg";
+import projectCardImg from "../../assets/images/projectCardImg.avif";
+import projectCardNext from "../../assets/images/next.webp";
 import "../../assets/styles/projectsHome.less";
 const ProjectsHome = () => {
   return (
