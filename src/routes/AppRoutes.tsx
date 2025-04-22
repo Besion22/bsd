@@ -8,15 +8,15 @@ const AppRoutes = () => {
     <Routes>
       <Route element={<MainLayout />}>
         <Route
-          path="/bsd"
+          path="/"
           element={<Home />}
         />
         <Route
-          path="/bsd/projects"
+          path="/projects"
           element={<Projects />}
         />
         <Route
-          path="/bsd/contact"
+          path="/contact"
           element={<Contact />}
         />
       </Route>

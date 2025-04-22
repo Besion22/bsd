@@ -25,19 +25,19 @@ const Navbar = () => {
         </div>
         <div className={`links-container ${isOpen ? "open" : ""}`}>
           <Link
-            to="/bsd"
+            to="/"
             className={`link ${isActive("/bsd") ? "active" : ""}`}
           >
             Home
           </Link>
           <Link
-            to="/bsd/projects"
+            to="/projects"
             className={`link ${isActive("/bsd/projects") ? "active" : ""}`}
           >
             Projects
           </Link>
           <Link
-            to="/bsd/contact"
+            to="/contact"
             className={`link ${isActive("/bsd/contact") ? "active" : ""}`}
           >
             Contact
