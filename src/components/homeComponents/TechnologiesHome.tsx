@@ -1,13 +1,13 @@
-import "../assets/styles/technologies.less";
-import adobe from "../assets/images/icons/adobe.svg";
-import css from "../assets/images/icons/css.svg";
-import figma from "../assets/images/icons/figma.svg";
-import html from "../assets/images/icons/html.svg";
-import javascript from "../assets/images/icons/javascript.svg";
-import kali from "../assets/images/icons/kali.svg";
-import nextjs from "../assets/images/icons/nextjs.svg";
-import reactjs from "../assets/images/icons/reactjs.svg";
-import shopify from "../assets/images/icons/shopify.svg";
+import "../../assets/styles/technologies.less";
+import adobe from "../../assets/images/icons/adobe.svg";
+import css from "../../assets/images/icons/css.svg";
+import figma from "../../assets/images/icons/figma.svg";
+import html from "../../assets/images/icons/html.svg";
+import javascript from "../../assets/images/icons/javascript.svg";
+import kali from "../../assets/images/icons/kali.svg";
+import nextjs from "../../assets/images/icons/nextjs.svg";
+import reactjs from "../../assets/images/icons/reactjs.svg";
+import shopify from "../../assets/images/icons/shopify.svg";
 
 const Technologies = () => {
   return (

@@ -1,17 +1,17 @@
-import Education from "../components/Education";
-import Experience from "../components/Experience";
-import HomeHero from "../components/HomeHero";
-import ProjectsHome from "../components/ProjectsHome";
-import Technologies from "../components/Technologies";
+import EducationHome from "../components/homeComponents/EducationHome";
+import ExperienceHome from "../components/homeComponents/ExperienceHome";
+import HomeHero from "../components/homeComponents/HomeHero";
+import ProjectsHome from "../components/homeComponents/ProjectsHome";
+import TechnologiesHome from "../components/homeComponents/TechnologiesHome";
 
 const Home = () => {
   return (
     <div>
       <HomeHero />
-      <Technologies />
+      <TechnologiesHome />
       <ProjectsHome />
-      <Education />
-      <Experience />
+      <EducationHome />
+      <ExperienceHome />
     </div>
   );
 };

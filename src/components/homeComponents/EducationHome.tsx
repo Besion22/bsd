@@ -1,5 +1,5 @@
-import EducationExperienceCard from "./resuseable/EducationExperienceCard";
-import "../assets/styles/education.less";
+import EducationExperienceCard from "../resuseable/EducationExperienceCard";
+import "../../assets/styles/education.less";
 import iunsIcon from "../assets/images/icons/iuns.svg";
 import afaIcon from "../assets/images/icons/afa.svg";
 
@@ -11,7 +11,7 @@ const Education = () => {
         title="International University of Struga"
         icon={iunsIcon}
         date="2020–2023"
-        description="I hold a Bachelor’s degree in Computer Science from the National University of Struga, graduating with a GPA of 9.0. My studies focused on core subjects like algorithms, data structures, programming languages (HTML, CSS, C#, JavaScript, SQL, PHP), databases, and software engineering. I was honored with an academic scholarship for three consecutive years in recognition of my performance."
+        description="I hold a Bachelor’s degree in Computer Science from the International University of Struga, graduating with a GPA of 8.8. My studies focused on core subjects like algorithms, data structures, programming languages (HTML, CSS, C#, JavaScript, SQL, PHP), databases, and software engineering. I was honored with an academic scholarship for three consecutive years in recognition of my performance."
       />
       <EducationExperienceCard
         title="The Armed Forces Academy (AFA)"
