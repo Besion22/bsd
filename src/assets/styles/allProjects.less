@@ -1,0 +1,81 @@
+.allProjectsContainer {
+  width: 100%;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+
+  .allProjectsTitle {
+    margin: 0;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 1000;
+    background: linear-gradient(to bottom, #ff8660, #d5491d);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .tab {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      font-size: 16px;
+      font-weight: 500;
+      border: 2px solid transparent;
+      border-radius: 12px;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: #9a33ff;
+      }
+
+      &.active {
+        background: linear-gradient(90deg, #ff8660 0%, #9a33ff 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-color: #9a33ff;
+      }
+    }
+  }
+
+  .projects {
+    text-align: center;
+
+    .tabContent {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 450px));
+      gap: 30px;
+      width: 100%;
+      max-width: 930px;
+      justify-content: center;
+    }
+
+    .projectCard {
+      box-sizing: border-box;
+    }
+  }
+
+  .activeIcon {
+    color: #9a33ff;
+  }
+
+  @media (max-width: 700px) {
+    .projects .tabContent {
+      grid-template-columns: 1fr;
+    }
+  }
+}

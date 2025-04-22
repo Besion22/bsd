@@ -3,7 +3,11 @@ import viewIcon from "../../assets/images/icons/viewIcon.svg";
 import projectCardImg from "../../assets/images/projectCardImg.avif";
 import projectCardNext from "../../assets/images/next.webp";
 import "../../assets/styles/projectsHome.less";
+import { useNavigate } from "react-router-dom";
+
 const ProjectsHome = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="projectsContainer">
       <h1 className="projectsTitle">PROJECTS</h1>
@@ -23,7 +27,15 @@ const ProjectsHome = () => {
           onClick={() => window.open("https://example.com", "_blank")}
         />
       </div>
-      <button className="viewAllButton">View All</button>
+      <button
+        type="button"
+        onClick={() => {
+          navigate("/projects");
+        }}
+        className="viewAllButton"
+      >
+        View All
+      </button>
     </div>
   );
 };

@@ -1,24 +1,54 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import bsd from "../assets/images/bsd.svg";
 import "../assets/styles/navbar.less";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event: Event) => {
+      const menu = document.querySelector(".links-container");
+      const hamburger = document.querySelector(".hamburger");
+
+      if (
+        menu &&
+        hamburger &&
+        !menu.contains(event.target as Node | null) &&
+        !hamburger.contains(event.target as Node | null)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location]);
+
   return (
     <div className="navbar-container">
       <div className="navbar">
-        <div className="logo-container">
+        <Link
+          to="/"
+          className="logo-container"
+        >
           <img
             src={bsd}
             alt="logo"
           />
-        </div>
+        </Link>
 
         <div className={`links-container ${isOpen ? "open" : ""}`}>
           <NavLink
