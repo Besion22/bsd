@@ -1,6 +1,9 @@
 import "../../assets/styles/homeHero.less";
 import avatar from "../../assets/images/avatar.svg";
+import { useNavigate } from "react-router-dom";
 const HomeHero = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="hero-container">
       <img
@@ -18,7 +21,15 @@ const HomeHero = () => {
           highly functional, and secure by design.
         </p>
         <div className="buttons-container">
-          <button className="connect-button">Let's Connect</button>
+          <button
+            type="button"
+            onClick={() => {
+              navigate("/contact");
+            }}
+            className="connect-button"
+          >
+            Let's Connect
+          </button>
           <button className="cv-button">Download CV</button>
         </div>
       </div>
