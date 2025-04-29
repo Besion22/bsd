@@ -10,6 +10,11 @@
     border: 1px solid red !important;
   }
 
+  .Toastify__toast--error {
+    background-color: #474747;
+    color: #fff;
+  }
+
   .contactFormTitle {
     margin: 0;
     font-size: 30px;
@@ -95,5 +100,13 @@
 @media screen and (max-width: 600px) {
   .contactForm {
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Toastify__toast--error {
+    width: 80%;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
