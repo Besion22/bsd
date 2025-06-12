@@ -5,6 +5,7 @@ import ProjectCard from "../resuseable/ProjectCard";
 import viewIcon from "../../assets/images/icons/viewIcon.svg";
 import projectCardImg from "../../assets/images/projectCardImg.avif";
 import projectCardNext from "../../assets/images/next.webp";
+import fs from "../../assets/images/fs.png";
 const AllProjects = () => {
   const [activeTab, setActiveTab] = useState("design");
 
@@ -14,9 +15,9 @@ const AllProjects = () => {
         return (
           <div className="tabContent">
             <ProjectCard
-              title="HTML TUTORIAL"
+              title="NEXTJS PROJECT"
               description="Click here to visit"
-              image={projectCardImg}
+              image={projectCardNext}
               icon={viewIcon}
               onClick={() => window.open("https://example.com", "_blank")}
             />
@@ -66,11 +67,16 @@ const AllProjects = () => {
         return (
           <div className="tabContent">
             <ProjectCard
-              title="HTML TUTORIAL"
+              title="FRAUDSNITCH"
               description="Click here to visit"
-              image={projectCardImg}
+              image={fs}
               icon={viewIcon}
-              onClick={() => window.open("https://example.com", "_blank")}
+              onClick={() =>
+                window.open(
+                  "https://besion22.github.io/fraudsnitch/#/",
+                  "_blank"
+                )
+              }
             />
             <ProjectCard
               title="NEXTJS PROJECT"

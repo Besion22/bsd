@@ -1,9 +1,9 @@
 import ProjectCard from "../resuseable/ProjectCard";
 import viewIcon from "../../assets/images/icons/viewIcon.svg";
-import projectCardImg from "../../assets/images/projectCardImg.avif";
-import projectCardNext from "../../assets/images/next.webp";
+import fs from "../../assets/images/fs.png";
 import "../../assets/styles/projectsHome.less";
 import { useNavigate } from "react-router-dom";
+import projectCardNext from "../../assets/images/next.webp";
 
 const ProjectsHome = () => {
   const navigate = useNavigate();
@@ -13,11 +13,13 @@ const ProjectsHome = () => {
       <h1 className="projectsTitle">PROJECTS</h1>
       <div className="cardsContainer">
         <ProjectCard
-          title="HTML TUTORIAL"
+          title="FRAUDSNITCH"
           description="Click here to visit"
-          image={projectCardImg}
+          image={fs}
           icon={viewIcon}
-          onClick={() => window.open("https://example.com", "_blank")}
+          onClick={() =>
+            window.open("https://besion22.github.io/fraudsnitch/#/", "_blank")
+          }
         />
         <ProjectCard
           title="NEXTJS PROJECT"
